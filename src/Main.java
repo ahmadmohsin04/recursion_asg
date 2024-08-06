@@ -58,3 +58,34 @@
 //
 //    }
 //}
+
+// Question 3
+
+//Write a recursive function int count_digit(int n, int digit); to count the number
+//of digits in a number n (n > 0) that are equal to a specified digit. For example,
+//if the digit we're searching for were 2 and the number we're searching were 220,
+//the answer would be 2?
+
+//public class Main {
+//
+//    public static int countDigit (int n , int digit){
+//        if (n==0)
+//            return 0;
+//
+//        int lastdigit = n%10;
+//        if (lastdigit==digit){
+//            return 1+countDigit(n/10 , digit);
+//        } else {
+//            return countDigit(n/10 , digit);
+//        }
+//
+//    }
+//
+//    public static void main(String[] args) {
+//        int number = 550;
+//        int digit = 5;
+//        int count = countDigit(number,digit);
+//        System.out.println(count);
+//
+//    }
+//}
