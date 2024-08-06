@@ -146,8 +146,34 @@
 //        int x = 5;
 //        int y = 15;
 //        int gcd = GCD(x,y);
-//        System.out.println(gcd);
+//        System.out.println("X : " + x);
+//        System.out.println("Y : " + y);
+//        System.out.println("GCD : " + gcd);
 //
 //    }
 //}
 
+// Question 6
+
+//Write a recursive function power (base, exponent) that when invoked returns
+//base exponent. For example,power (3, 4) = 3 * 3 * 3 * 3. Assume that exponent
+//is an integer greater than or equal to 1?
+
+//public class Main {
+//
+//    public static int power (int base , int exp){
+//        if (exp == 0){
+//            return 1;
+//        } else {
+//            return base *power(base , exp -1);
+//        }
+//    }
+//    public static void main(String[] args) {
+//        int b = 4;
+//        int e = 3;
+//        int p = power(b,e);
+//        System.out.println("Base : " + b);
+//        System.out.println("Power : " + e);
+//        System.out.println("Result : " + p);
+//    }
+//}
