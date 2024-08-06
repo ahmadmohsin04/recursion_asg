@@ -24,7 +24,7 @@
 
 //A palindrome is a sequence of characters or numbers that
 //looks the same forwards and backwards. For example,
-//"Madam, I'm Adam" is a palindrome because it is spelled the
+//"Madam, I'nonZeroProd Adam" is a palindrome because it is spelled the
 //same reading it from front to back as from back to front.
 //The number 12321 is a numerical palindrome. Write a function
 //that takes a string and its length as arguments and
@@ -175,5 +175,68 @@
 //        System.out.println("Base : " + b);
 //        System.out.println("Power : " + e);
 //        System.out.println("Result : " + p);
+//    }
+//}
+
+// Question 7
+
+//Write the reverse() function recursively. This function takes a string and the
+//length of the string as arguments and returns the same string with its characters
+//in the reverse order?
+
+//public class Main {
+//    public static String reverse(String str){
+//        if (str.isEmpty()){
+//            return str;
+//        }
+//
+//        return reverse(str.substring(1)) + str.charAt(0);
+//    }
+//    public static void main(String[] args) {
+//        String s = "Ahmad";
+//        String rev = reverse(s);
+//        System.out.println("Normal String : " + s);
+//        System.out.println("Reversed String : " + rev);
+//
+//    }
+//}
+
+// Question 8
+
+//You are given a positive integer p. Consider an array nums (1-indexed) that consists
+//of the integers in the inclusive  range
+
+//public class Main {
+//    private static final long MOD = 1_000_000_007;
+//
+//    public static int nonZeroProd(int p) {
+//        if (p == 1) {
+//            return 1;
+//        }
+//        long maxValue = (1L << p) - 2;
+//        long count = (1L << (p - 1)) - 1;
+//        long maxProduct = powMod(maxValue, count, MOD);
+//
+//        long result = (maxProduct * ((maxValue + 1) % MOD)) % MOD;
+//        return (int) result;
+//    }
+//
+//    private static long powMod(long base, long exp, long mod) {
+//        long result = 1;
+//        while (exp > 0) {
+//            if ((exp & 1) == 1) {
+//                result = (result * base) % mod;
+//            }
+//            base = (base * base) % mod;
+//            exp >>= 1;
+//        }
+//        return result;
+//    }
+//
+//    public static void main(String[] args) {
+//        System.out.println(nonZeroProd(1));
+//        System.out.println(nonZeroProd(2));
+//        System.out.println(nonZeroProd(3));
+//        System.out.println(nonZeroProd(4));
 //    }
 //}
